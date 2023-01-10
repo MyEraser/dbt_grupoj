@@ -11,7 +11,7 @@ with covid as (
 		"_modified" as data_modificacao,
 		dt_notific as data_notificacao,
 		dt_inicio_sintomas as data_inicio_sintomas,
-		bairro_resid__estadia,
+		bairro_resid_estadia,
 		ap_residencia_estadia as area_planej_redid_estadia,
 		evolucao,
 		dt_evolucao as data_evolucao,
