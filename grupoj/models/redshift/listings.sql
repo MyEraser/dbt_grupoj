@@ -5,7 +5,7 @@
 {{ config(materialized='table') }}
 
 
-create table dbt_airbnb.listings as (
+create table listings as (
 	select 
 		id,
 		_file as arquivo_origem,
