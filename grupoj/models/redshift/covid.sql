@@ -19,7 +19,7 @@ with covid as (
 		data_atualizacao,
 		"_fivetran_synced"	
 	FROM s3.covid_airbnd
-	where _file like '%covid.csv%'
+	where _file like '%Dados_CEP_MRJ_covid_19.csv%'
 
 )
 
