@@ -1,4 +1,11 @@
-create view dbt_airbnb.listings as (
+
+/**
+    config(materialized indica o formato de materialização no banco de dados)
+*/
+{{ config(materialized='table') }}
+
+
+create table dbt_airbnb.listings as (
 	select 
 		id,
 		_file as arquivo_origem,
