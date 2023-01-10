@@ -5,7 +5,7 @@
 {{ config(materialized='table') }}
 
 
-create table listings as (
+with listings as (
 	select 
 		id,
 		_file as arquivo_origem,
@@ -31,3 +31,6 @@ create table listings as (
 	where _file like '%listings.csv%'
 
 )
+
+
+select *from listings
