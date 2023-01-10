@@ -1,6 +1,6 @@
 {{ config(materialized='table') }}
 
-with as bairro(
+with bairro as(
     SELECT 
         "_file" as origem_arquivo,
         "_line" as linha,
