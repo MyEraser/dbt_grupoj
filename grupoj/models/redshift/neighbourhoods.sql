@@ -10,3 +10,5 @@ with as bairro(
     FROM s3.covid_airbnd 
     where _file like '%neighbourhoods.csv%';
 )
+
+select*from bairro
