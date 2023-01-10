@@ -8,7 +8,7 @@ with as bairro(
         neighbourhood as bairro,
         "_fivetran_synced"
     FROM s3.covid_airbnd 
-    where _file like '%neighbourhoods.csv%';
+    where _file like '%neighbourhoods.csv%'
 )
 
 select*from bairro
